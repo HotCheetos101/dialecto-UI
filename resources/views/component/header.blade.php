@@ -1,7 +1,9 @@
 <header class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#">
+
+
+        <a class="navbar-brand" href="{{ url('/login') }}">
             <img src="{{ asset('images/header-logo.png') }}" alt="Logo" class="img-fluid">
         </a>
 

@@ -1,10 +1,77 @@
 /* For documentation: Search the css for a view but addind css:viewName */
 
 
+/* custom classes  */
+
+/* buttons  */
+
+
+
+.btn-login {
+    background-color: #CB9219;
+    border-color: #CB9219;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: 500;
+}
+
+.btn-register {
+    background-color: #CB9219;
+    border-color: #CB9219;
+    color: white;
+
+}
+
+
+.btn-logout {
+    background-color: #CB9219;
+    border-color: #CB9219;
+    color: white;
+    border-radius: 5px;
+    height: 50px;
+    font-weight: 500;
+}
+
+
+.btn-logout:hover {
+    color: #fff;
+    /* Text color on hover */
+    background-color: #A67C1F;
+    /* Background color on hover */
+    border-color: #A67C1F;
+    /* Border color on hover */
+}
+
+.btn-login:hover {
+    color: #fff;
+    /* Text color on hover */
+    background-color: #A67C1F;
+    /* Background color on hover */
+    border-color: #A67C1F;
+    /* Border color on hover */
+}
+
+
+.btn-register:hover {
+    color: #fff;
+    /* Text color on hover */
+    background-color: #A67C1F;
+    /* Background color on hover */
+    border-color: #A67C1F;
+    /* Border color on hover */
+}
+
+/* css:header  */
+
+header {
+    z-index: 1000;
+}
+
 /* css:body */
 
 body {
-    background-color: #FFCA58 !important;
+    background-color: #FFCA58;
 }
 
 /* css:homepage/login */
@@ -18,16 +85,159 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-left: 15%;
 }
 
 .landing-page .right-side {
     display: flex;
+
     justify-content: center;
     align-items: center;
+    padding-right: 15%;
 }
 
 .login-form {
-    /* background-color: #fff; */
+    border-radius: 5px;
+    padding: 50px 50px 70px 50px;
+    background-color: white;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
+    align-items: center;
+    /* Add shadow on right and bottom */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.forget-password {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    /* Add space between button and label */
+    color: #CB9219;
+    font-weight: 500;
+
+    display: block;
+    /* Ensure it behaves like a block element if needed */
+
+    text-decoration: none;
+
+}
+
+.forget-password:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+    color: #A67C1F;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .landing-page .left-side {
+        padding-left: 0;
+        /* Remove padding on smaller screens */
+    }
+
+    .landing-page .right-side {
+
+        padding-right: 0;
+    }
+}
+
+/* css:register page  */
+
+.modal-overlay {
+    display: none;
+    /* Hide the overlay by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark semi-transparent background */
+    z-index: 1050;
+    /* Make sure it's on top of everything */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.blurred {
+    filter: blur(5px);
+    /* Apply blur effect to the background */
+}
+
+
+/* css:components  */
+
+/* css:header  */
+
+.navbar-brand img {
+    max-height: 70px;
+    margin-left: 20%;
+
+}
+
+/* css:sidebar  */
+#sidebar {
+
+    height: calc(100vh - 150px);
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 400px;
+    background-color: #1A2325;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    /* Shadow on the right side */
+    z-index: 100;
+}
+
+
+.btn-nav {
+    display: block;
+    /* Ensure buttons take full width of the container */
+    width: 100%;
+    /* Full width for each button */
+    padding: 15px;
+    /* Adjust padding as needed */
+    margin-bottom: 15px;
+    /* Space between buttons */
+    background: linear-gradient(to right, #6A6C6C, #253036);
+    /* Gradient background */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Adjust font size */
+    text-align: left;
+    /* Align text to the left */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
+}
+
+.btn-nav:hover {
+    background: linear-gradient(to right, #5a5b5b, #1e2b2b);
+    /* Darker gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Increase shadow on hover */
 }

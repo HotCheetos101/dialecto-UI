@@ -1,0 +1,33 @@
+/* For documentation: Search the css for a view but addind css:viewName */
+
+
+/* css:body */
+
+body {
+    background-color: #FFCA58 !important;
+}
+
+/* css:homepage/login */
+
+.landing-page {
+    display: flex;
+    height: 100vh;
+}
+
+.landing-page .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    /* background-color: #fff; */
+    width: 100%;
+    max-width: 400px;
+}

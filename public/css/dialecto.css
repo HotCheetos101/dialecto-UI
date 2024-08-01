@@ -74,11 +74,14 @@ body {
     background-color: #FFCA58;
 }
 
-/* css:homepage/login */
+/* css:langing-page */
 
 .landing-page {
     display: flex;
     height: 100vh;
+
+    border: solid;
+    /* padding: 0px; */
 }
 
 .landing-page .left-side {

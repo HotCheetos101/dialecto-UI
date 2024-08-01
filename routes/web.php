@@ -11,9 +11,14 @@ Route::get('/home', function () {
 });
 
 Route::get('/login', function () {
-    return view('auth.homepage');
+    return view('auth.landing-page');
 });
 
-Route::get('/home-user', function () {
+// Route::get('/home-user', function () {
+//     return view('user.learner.homepage');
+// });
+
+
+Route::get('/user/home', function () {
     return view('user.learner.homepage');
 });

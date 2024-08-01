@@ -6,16 +6,16 @@
 
 <!-- <span>This is login page</span> -->
 
-<div class="container-fluid landing-page">
+<div class="container-fluid landing-page ">
 
 
-    <div class="row w-100">
+    <div class="row w-100  ">
 
-        <div class="col-md-6 left-side">
+        <div class="col-md-6 left-side ">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" class="img-fluid">
         </div>
 
-        <div class="col-md-6 right-side">
+        <div class="col-md-6 right-side ">
 
 
 
@@ -37,11 +37,9 @@
 
                 <button type="submit" class="btn btn-login btn-block">Login</button>
 
-                <!-- <label for="forgetPassword" class="w-100 text-center forget-password ">Forget password?</label> -->
                 <a href="/forget-password" class="w-100 text-center forget-password">Forget password?</a>
                 <hr>
 
-                <!-- <button type="submit" class="btn btn-login btn-block">Create new account</button> -->
                 <button type="button" class="btn btn-login btn-block" id="registerButton">Create new account</button>
 
 
@@ -54,6 +52,8 @@
 
 <!-- Register Modal -->
 <div class="modal-overlay" id="registerModal">
+
+
     <div class="modal-content">
         <h4>Register</h4>
         <!-- Add your register form here -->
@@ -89,28 +89,6 @@
 
             <!-- birthdate  -->
 
-            <!-- <div class="row">
-
-                <div class="col-md-4 pr-0">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Month">
-                    </div>
-                </div>
-
-                <div class="col-md-4 pr-0">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Day">
-                    </div>
-                </div>
-
-                <div class="col-md-4 ">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Year">
-                    </div>
-                </div>
-
-            </div> -->
-
             <div class="row">
                 <div class="col-md-4 pr-0">
                     <div class="form-group">
@@ -138,8 +116,7 @@
                         <label for="day">Day</label>
                         <select id="day" class="form-control">
                             <option value="">Select Day</option>
-                            <!-- Options for days, assuming a maximum of 31 days -->
-                            <!-- You might want to dynamically generate these options based on the selected month -->
+
                             @for ($i = 1; $i <= 31; $i++) <option value="{{ sprintf('%02d', $i) }}">{{ $i }}</option>
                                 @endfor
                         </select>
